@@ -1,6 +1,6 @@
 # SequenceModels
 
-For example, for supervised learning tasks, there is an input block and a target block and we want to learn to predict targets from inputs. Learning to predict a cat/dog label (Label(["cat", "dog"])) from 2D images (Image{2}()) is a supervised image classification task
+For example, for supervised learning tasks, there is an input block and a target block and we want to learn to predict targets from inputs. Learning to predict a cat/dog label (Label(["cat", "dog"])) from 2D images (Image{2}()) is a supervised image classification task.
 
 A block is not a piece of data itself. Instead it describes the meaning of a piece of data in a context. That a piece of data is a block can be checked using [checkblock](block, data). A piece of data for the Label block above needs to be one of the labels, so checkblock(Label(["cat", "dog"]), "cat") == true, but checkblock(Label(["cat", "dog"]), "cat") == false.
 
